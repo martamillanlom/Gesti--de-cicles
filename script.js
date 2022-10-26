@@ -68,7 +68,7 @@ function printLlistat (llistat){
 //Funció per actualitzar el selector de cicles cada vegada que afegim un cicle
 function actualitzarSelector(){
     let select = document.getElementById('modul_cicle');
-
+    select.innerHTML = "";
     llistatCicles.forEach(function(element, index){
         let opt = document.createElement('option');
         opt.value = index;
